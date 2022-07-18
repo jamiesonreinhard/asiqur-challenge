@@ -2,6 +2,7 @@ import React from "react";
 import "../App.css";
 import { useEffect, useState } from "react";
 import SearchContact from "./SearchContact";
+import Users from "./Users";
 
 const Contacts = () => {
 
@@ -20,11 +21,13 @@ const Contacts = () => {
 //   runs getUsers() function on page load
   useEffect(() => {
     getUsers();
+    console.log(JSON.stringify(users[0]))
   }, []);
 
   return (
     <div>
         <SearchContact />
+        <Users users={users}/>
     </div>
   );
 };

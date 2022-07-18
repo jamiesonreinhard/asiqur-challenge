@@ -1,0 +1,44 @@
+.parent {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 30px;
+  margin-bottom: 200px;
+}
+
+.parent p {
+    color: grey;
+    margin-top: -20px;
+}
+
+.child {
+  background: white;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 250px;
+  margin: 10px;
+  margin-bottom: 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  border-radius: 20px;
+}
+
+.child img {
+  margin-top: 20px;
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  background-color: #ffbc99;
+}
+
+.child:last-child {
+  margin-bottom: 10px;
+}
+
+.first {
+    border: 1px solid blue;
+}
+
