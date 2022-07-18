@@ -9,7 +9,7 @@ const Contacts = () => {
 
 // state to store user
   const [users, setUsers] = useState([]);
-  const [popup, setPopup] = useState(true)
+  const [popup, setPopup] = useState(false)
 
 //   function to retrieve 20 users from random-data-api
   const getUsers = async () => {
