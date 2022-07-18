@@ -3,11 +3,13 @@ import "../App.css";
 import { useEffect, useState } from "react";
 import SearchContact from "./SearchContact";
 import Users from "./Users";
+import Popup from "./Popup";
 
 const Contacts = () => {
 
 // state to store user
   const [users, setUsers] = useState([]);
+  const [popup, setPopup] = useState(true)
 
 //   function to retrieve 20 users from random-data-api
   const getUsers = async () => {
@@ -28,6 +30,7 @@ const Contacts = () => {
     <div>
         <SearchContact />
         <Users users={users}/>
+        {popup && <Popup />}
     </div>
   );
 };

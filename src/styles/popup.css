@@ -1,0 +1,75 @@
+.popup-image {
+    padding-left: 20px;
+  }
+  .popup-image img {
+    left: 10px;
+    height: 20px;
+  }
+  img:hover {
+    filter: none;
+  }
+  .popup-image img:hover {
+    filter: grayscale(1);
+  }
+  body.active-modal {
+    overflow-y: hidden;
+  }
+  .btn-modal {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+  }
+  .modal,
+  .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+  }
+  .overlay {
+    background: rgba(170, 170, 170, 0.2);
+  }
+  .modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #1f222a;
+    padding: 14px 28px;
+    border-radius: 3px;
+    width: 30rem;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+  .modal-content p {
+    margin: 15px;
+    font-size: 1em;
+    color: white;
+  }
+  .modal-content h2 {
+    color: white;
+  }
+  .confirm-buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+  .confirm-buttons button {
+    all: unset;
+    font-size: 1.2em;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .delete {
+    background-color: #fc0005 !important;
+  }
+  .close-modal {
+    background-color: #c1c1c1 !important;
+  }
