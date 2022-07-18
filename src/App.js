@@ -12,15 +12,18 @@ import userData from './data/user';
 
 const App = () => {
   const [user, setUser] = useState({});
+  const [inital, setInital] = useState()
 
   useEffect(() => {
     setUser(userData)
+    // retrives first letter from first_name and sets it to initial state
+    setInital(userData.first_name[0])
   }, [])
 
   return (
     <Router>
       <div className='App'>
-        <Nav />
+        <Nav inital={inital}/>
       </div>
       <Routes>
           <Route path="/" element={<Home />} />

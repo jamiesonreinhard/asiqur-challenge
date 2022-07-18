@@ -1,0 +1,28 @@
+.search-contact-container {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.search-contact-container input {
+  all: unset;
+  width: 250px;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid grey;
+  padding-left: 25px;
+  background: url("https://static.thenounproject.com/png/101791-200.png")
+    no-repeat left;
+  background-size: 20px;
+  margin-right: 30px;
+}
+
+.search-contact-container button {
+    all: unset;
+    background-color: #3395FF;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}

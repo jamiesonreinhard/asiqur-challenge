@@ -44,3 +44,19 @@
     text-decoration: none;
     color: black;
   }
+
+  .inital {
+    background-color: #FFD15B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-weight: bold;
+  }
+
+ .route {
+  color: black !important;
+  font-weight: bold !important;
+ }
